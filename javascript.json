@@ -1,0 +1,35 @@
+{
+    "simple function": {
+		"description": "A simple  function",
+        "prefix": "function",
+        "body": [
+            "function(${1:params}) {",
+            "\t${2:body}",
+            "}"
+        ]
+    },
+	"jasmine describe": {
+		"prefix": "describe",
+		"body": [
+			"describe('${1:name}', function() {",
+			"\t${2:body}",
+			"});"
+		]
+	},
+	"jasmine afterEach": {
+		"prefix": "afterEach",
+		"body": [
+			"afterEeach(function() {",
+			"\t${1:body}",
+			"});"
+		]
+	},
+	"jasmine it": {
+		"prefix": "it",
+		"body": [
+			"it('${1:name}', function() {",
+			"\t${2:body}",
+			"});"
+		]
+	}
+}
