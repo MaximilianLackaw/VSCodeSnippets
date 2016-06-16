@@ -1,6 +1,6 @@
 {
     "simple function": {
-		"description": "A simple  function",
+        "description": "A simple  function",
         "prefix": "function",
         "body": [
             "function(${1:params}) {",
@@ -8,28 +8,48 @@
             "}"
         ]
     },
-	"jasmine describe": {
-		"prefix": "describe",
-		"body": [
-			"describe('${1:name}', function() {",
-			"\t${2:body}",
-			"});"
-		]
-	},
-	"jasmine afterEach": {
-		"prefix": "afterEach",
-		"body": [
-			"afterEeach(function() {",
-			"\t${1:body}",
-			"});"
-		]
-	},
-	"jasmine it": {
-		"prefix": "it",
-		"body": [
-			"it('${1:name}', function() {",
-			"\t${2:body}",
-			"});"
-		]
-	}
+    "jasmine describe": {
+        "prefix": "describe",
+        "body": [
+            "describe('${1:name}', function() {",
+            "\t${2:body}",
+            "});"
+        ]
+    },
+    "jasmine afterEach": {
+        "prefix": "afterEach",
+        "body": [
+            "afterEeach(function() {",
+            "\t${1:body}",
+            "});"
+        ]
+    },
+    "jasmine it": {
+        "prefix": "it",
+        "body": [
+            "it('${1:name}', function() {",
+            "\t${2:body}",
+            "});"
+        ]
+    },
+    "gulp task": {
+        "prefix": "gulptask",
+        "body": [
+            "gulp.task('${1:name}', function() {",
+            "\t${2:body}",
+            "});"
+        ]
+    },
+    "gulp task ES6": {
+        "prefix": "gulptaskes6",
+        "body": [
+            "gulp.task('${1:name}', () => {",
+            "\t${2:body}",
+            "});"
+        ]
+    },
+    "require": {
+        "prefix": "require",
+        "body": "var ${1:name} = require('${1:name}');"
+    }
 }
