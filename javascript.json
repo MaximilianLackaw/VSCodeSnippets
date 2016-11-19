@@ -51,5 +51,15 @@
     "require": {
         "prefix": "require",
         "body": "var ${1:name} = require('${1:name}');"
+    },
+    "IIFE": {
+        "prefix": "iife",
+        "body": [
+            "(function() {",
+            "\t'use strict';",
+            "",
+            "\t${1:body}",
+            "})();"
+        ]
     }
 }

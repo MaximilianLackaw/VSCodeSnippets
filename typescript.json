@@ -1,0 +1,40 @@
+{
+  "moch describe": {
+    "prefix": "mDescribe",
+    "body": [
+      "describe('${1:name}', () => {",
+      "\t${2:body}",
+      "});"
+    ]
+  },
+  "moch beforeEach": {
+    "prefix": "mBeforeEach",
+    "body": [
+      "beforeEach(() => {",
+      "\t${1:body}",
+      "});"
+    ]
+  },
+  "moch afterEach": {
+    "prefix": "mAfterEach",
+    "body": [
+      "afterEeach(() => {",
+      "\t${1:body}",
+      "});"
+    ]
+  },
+  "mocha it": {
+    "prefix": "mIt",
+    "body": [
+      "it('${1:name}', () => {",
+      "\t${2:body}",
+      "});"
+    ]
+  },
+  "chai expect": {
+    "prefix": "cexpect",
+    "body": [
+      "expect(${1:value}).to${2:continue}"
+    ]
+  }
+}
